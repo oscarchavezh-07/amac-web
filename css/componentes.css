@@ -13,13 +13,26 @@
 }
 
 .icono-ayuda {
-  width: 1.125rem;
-  height: 1.125rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .icono-menu {
-  width: 1.5625rem;
-  height: 1.5625rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.boton-menu {
+  background-color: transparent;
+  outline: transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+}
+
+.boton-menu:focus {
+  outline: 3px solid var(--ayuda, #fddaad);
+  outline-offset: 3px;
 }
 
 .campo-busqueda {
