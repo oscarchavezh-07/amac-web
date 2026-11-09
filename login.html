@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacantes disponibles | AMAC</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body class="pagina-vacantes">
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="barra-superior">
+      <a href="index.html">
+        <img class="logo" src="logo-header0.png" alt="AMAC">
+      </a>
+
+      <div class="acciones-header">
+        <a class="enlace-ayuda" href="#">
+          <img class="icono-ayuda" src="icono-tel-fono0.svg" alt="Icono de telefono">
+          <span>Ayuda</span>
+        </a>
+        <button class="boton-menu" type="button">
+          <img class="icono-menu" src="menu0.svg" alt="Icono de menu">
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="/index.html" class="current-page">Vacantes</a>
+      <a href="/mis-solicitudes.html">Solicitudes</a>
+      <a href="/mi-perfil.html"> <!--Cuando exista, verdad-->Perfil</a>
+    </nav>
+  </header>
+
+  <main class="pagina-login">
+    <div class="login-contenedor">
+
+      <header class="login-encabezado">
+        <h1>Iniciar Sesión</h1>
+        <hr class="login-separador">
+      </header>
+
+      <section class="login-contenido">
+
+        <form class="login-formulario" action="#" method="post">
+
+          <div class="login-campo">
+            <label for="correo" class="login-etiqueta">
+              Correo Electrónico
+            </label>
+
+            <input type="email" id="correo" name="correo" class="input" placeholder="Escribe una respuesta" required>
+          </div>
+
+          <div class="login-campo">
+            <label for="contrasena" class="login-etiqueta">
+              Contraseña
+            </label>
+
+            <input type="password" id="contrasena" name="contrasena" class="input" placeholder="Escribe una respuesta" required>
+          </div>
+
+          <a href="#" class="login-recuperar">
+            ¿Olvidaste tu contraseña?
+          </a>
+
+          <hr class="login-separador-discontinuo">
+
+          <p class="login-terminos">
+            Al iniciar sesión aceptas los
+            <a href="#">términos de Servicio y Privacidad de AMAC.</a>
+          </p>
+
+          <button type="submit" class="boton boton-principal">
+            Iniciar Sesión
+          </button>
+
+          <div class="login-registro">
+            <p class="login-registro-texto"> ¿No tienes cuenta? Regístrate </p>
+
+            <div class="login-registro-opciones">
+              <a href="/registro-candidato.html" class="boton boton-secundario"> Registrarse como Candidato </a>
+
+              <a href="/registro-empresa.html" class="boton boton-secundario"> Registrarse como Empresa </a>
+            </div>
+          </div>
+
+        </form>
+
+        <aside class="login-imagen">
+          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Imagen ilustrativa de inicio de sesión" >
+        </aside>
+
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <p class="footer-marca">AMAC</p>
+      <hr class="footer-separador">
+
+      <nav class="footer-enlaces" aria-label="Enlaces del footer">
+          <div class="footer-enlaces-columna">
+          <a href="/index.html">Inicio</a>
+          </div>
+          <div class="footer-enlaces-columna">
+          <p>Contacto</p>
+          <p>Teléfono</p>
+          <p>Correo</p>
+          </div>
+      </nav>
+
+      <div class="footer-legal">
+          <span>© 2025 AMAC</span>
+          <p>Términos de servicio</p>
+          <p>Términos de privacidad</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
