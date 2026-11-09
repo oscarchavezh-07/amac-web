@@ -1,0 +1,45 @@
+:root {
+  /* colores */
+  --texto: #1a1a1a;
+  --header-y-botones-principales: #202945;
+  --fondo: #f5f7fa;
+  --tarjetas: #ffffff;
+  --contorno: #a8a8a8;
+  --exito: #246412;
+  --ayuda: #fddaad;
+  --secundario: #ff815c;
+  --error: #ff815c;
+  --falla: #b12424;
+  --pantone: #cae4ef;
+  --pantone2: #fddaad;
+
+  /* fonts */
+  --titulo-font-family: Baskervville-SemiBold, sans-serif;
+  --titulo-font-size: 2.25rem;
+  --titulo-line-height: normal;
+  --titulo-font-weight: 600;
+  --titulo-font-style: normal;
+  --subtitulo-font-family: Baskervville-Bold, sans-serif;
+  --subtitulo-font-size: 1.5rem;
+  --subtitulo-line-height: normal;
+  --subtitulo-font-weight: 700;
+  --subtitulo-font-style: normal;
+  --etiqueta-font-family: WorkSans-Bold, sans-serif;
+  --etiqueta-font-size: 1.125rem;
+  --etiqueta-line-height: normal;
+  --etiqueta-font-weight: 700;
+  --etiqueta-font-style: normal;
+  --cuerpo-font-family: WorkSans-Regular, sans-serif;
+  --cuerpo-font-size: 1.125rem;
+  --cuerpo-line-height: 150%;
+  --cuerpo-font-weight: 400;
+  --cuerpo-font-style: normal;
+  --boton-font-family: WorkSans-Medium, sans-serif;
+  --boton-font-size: 1.25rem;
+  --boton-line-height: normal;
+  --boton-font-weight: 500;
+  --boton-font-style: normal;
+
+  /* efectos */
+  --sombra-basica-box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+}
