@@ -101,3 +101,36 @@ h2 {
 .pagina-detalle-vacante a {
   font: inherit;
 }
+
+/* login */
+.pagina-login {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem 0.625rem;
+  background: var(--fondo, #f5f7fa);
+}
+
+.pagina-login *,
+.pagina-login *::before,
+.pagina-login *::after {
+  box-sizing: border-box;
+}
+
+.login-contenedor {
+  width: 100%;
+  max-width: 76.25rem;
+  margin: 0 auto;
+}
+
+.login-separador {
+  border: 0;
+  border-top: 1px solid var(--contorno, #a8a8a8);
+  margin: 0.75rem 0;
+}
+
+.login-separador-discontinuo {
+  width: 100%;
+  border: 0;
+  border-top: 2px dashed var(--contorno, #a8a8a8);
+  margin: 0.5rem 0;
+}
