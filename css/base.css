@@ -21,6 +21,7 @@ body {
 }
 
 img {
+  border-radius: 0.5rem;
   display: block;
   max-width: 100%;
 }
@@ -73,4 +74,30 @@ h3 {
 h1,
 h2 {
   font-size: var(--subtitulo-font-size, 1.5rem);
+}
+
+/* Especificos detalle vacante */
+
+.pagina-detalle-vacante,
+.pagina-detalle-vacante * {
+  box-sizing: border-box;
+}
+
+.pagina-detalle-vacante {
+  color: var(--texto, #1a1a1a);
+  background: var(--fondo, #ffffff);
+  font-family: var(--cuerpo-font-family, "WorkSans-Regular", sans-serif);
+  font-size: var(--cuerpo-font-size, 1.125rem);
+  line-height: var(--cuerpo-line-height, 150%);
+}
+
+.pagina-detalle-vacante h1,
+.pagina-detalle-vacante h2,
+.pagina-detalle-vacante p {
+  margin: 0;
+}
+
+.pagina-detalle-vacante button,
+.pagina-detalle-vacante a {
+  font: inherit;
 }
