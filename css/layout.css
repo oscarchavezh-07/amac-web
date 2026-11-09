@@ -141,16 +141,6 @@
   height: 0.25rem;
   position: relative;
 }
-.pestania-3 {
-  padding: 0.75rem 0.125rem 0rem 0.125rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5625rem;
-  align-items: center;
-  justify-content: flex-start;
-  flex: 1;
-  position: relative;
-}
 
 .header-candidato nav {
     padding: 0.75rem 0.125rem 0rem 0.125rem;
@@ -161,4 +151,60 @@
     justify-content: flex-start;
     flex: 1;
     position: relative;
+}
+
+/*
+Layout Vacantes Disponibles
+*/
+
+.basic-vacantes,
+.basic-vacantes * {
+    box-sizing: border-box;
+}
+.basic-vacantes {
+    background: var(--fondo, #f5f7fa);
+    padding: 0rem 0rem 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.content {
+    padding: 1rem;
+
+}
+.content h1 {
+    color: var(--texto);
+    text-align: left;
+    font-family: var(--titulo-font-family, "Baskervville-SemiBold", sans-serif);
+    font-size: var(--titulo-font-size, 2.25rem);
+    font-weight: var(--titulo-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+}
+.content p {
+    color: #000000;
+    text-align: left;
+    font-family: var(--cuerpo-font-family, "WorkSans-Regular", sans-serif);
+    font-size: var(--cuerpo-font-size, 1.125rem);
+    line-height: var(--cuerpo-line-height, 150%);
+    font-weight: var(--cuerpo-font-weight, 400);
+    position: relative;
+    align-self: stretch;
+}
+
+.layout-lista-vacantes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
 }
