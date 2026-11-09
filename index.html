@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--  cosas de usar index para testear los estilos-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacantes disponibles | AMAC</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body class="pagina-vacantes">
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="barra-superior">
+      <a href="index.html">
+        <img class="logo" src="logo-header0.png" alt="AMAC">
+      </a>
+
+      <div class="acciones-header">
+        <a class="enlace-ayuda" href="#">
+          <img class="icono-ayuda" src="icono-tel-fono0.svg" alt="Icono de telefono">
+          <span>Ayuda</span>
+        </a>
+        <button class="boton-menu" type="button">
+          <img class="icono-menu" src="menu0.svg" alt="Icono de menu">
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="/index.html" class="current-page">Vacantes</a>
+      <a href="/mis-solicitudes.html">Solicitudes</a>
+      <a href="/mi-perfil.html"> <!--Cuando exista, verdad-->Perfil</a>
+    </nav>
+  </header>
+
+  <main id="principal" class="main">
+    <section class="intro">
+      <h1 id="titulo-principal">Vacantes disponibles</h1>
+      <p>Aplica a una oferta hoy mismo</p>
+      <p>Busca por palabras clave o aplica filtros a la búsqueda.</p>
+    </section>
+
+    <form class="buscador" action="/vacante.html" method="get">
+      <div class="campo-busqueda">
+        <input type="text" placeholder="Buscar vacante" id="busca">
+        <button class="boton-buscar" type="submit">
+          <img src="search-icon0.svg" alt="Icono de busqueda">
+        </button>
+      </div>
+    </form>
+
+    <hr class="separador">
+
+    <div class="zona-vacantes">
+      <aside class="filtros">
+        <form class="panel-filtros">
+          <h2 id="titulo-filtros">Filtros</h2>
+
+          <div class="grupo-filtros">
+            <fieldset>
+              <legend>Horarios</legend>
+              <label class="opcion-filtro">
+                <input type="checkbox" name="horario" value="completo">
+                <span>Tiempo completo</span>
+              </label>
+              <label class="opcion-filtro">
+                <input type="checkbox" name="horario" value="medio">
+                <span>Medio tiempo</span>
+              </label>
+            </fieldset>
+
+            <hr class="divisor-filtros">
+
+            <fieldset>
+              <legend>Categoría de empleo</legend>
+              <label class="opcion-filtro">
+                <input type="checkbox" name="categoria" value="operativo">
+                <span>Operativo</span>
+              </label>
+              <label class="opcion-filtro">
+                <input type="checkbox" name="categoria" value="administrativo">
+                <span>Administrativo</span>
+              </label>
+              <label class="opcion-filtro">
+                <input type="checkbox" name="categoria" value="seguridad">
+                <span>Seguridad</span>
+              </label>
+              <label class="opcion-filtro">
+                <input type="checkbox" name="categoria" value="ventas">
+                <span>Ventas</span>
+              </label>
+              <label class="opcion-filtro">
+                <input type="checkbox" name="categoria" value="atencion-cliente">
+                <span>Atención al cliente</span>
+              </label>
+            </fieldset>
+          </div>
+        </form>
+      </aside>
+
+      <div class="resultados-vacantes">
+        <article class="tarjeta-vacante">
+          <h2>Guardia de seguridad</h2>
+          <div class="detalles-vacante">
+            <p class="dato-vacante"><strong>Empresa:</strong> Regio Guardias</p>
+            <p class="dato-vacante"><strong>Sueldo:</strong> $9,999 / mes</p>
+            <p class="dato-vacante dato-ubicacion"><strong>Ubicación:</strong> Monterrey, Av. 29 de febrero, #234</p>
+            <p class="dato-vacante dato-contacto"><strong>Contacto:</strong> 8110101011</p>
+            <hr>
+            <p class="dato-vacante dato-horario"><strong>Horario:</strong> Lunes a viernes | 8:00 h - 17:00 h</p>
+            <p class="dato-vacante dato-modalidad"><strong>Modalidad:</strong> Presencial</p>
+            <p class="dato-vacante descripcion-vacante"><strong>Descripción:</strong> Buscamos talento de personas comprometidas con el cuidado y resolución de problemas en agencia de guardias de seguridad y protección privada.</p>
+            <hr>
+            <div class="acciones-vacante">
+              <a class="boton-secundario" href="/vacante.html">Ver más</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta-vacante">
+          <h2>Cajero nocturno</h2>
+          <div class="detalles-vacante">
+            <p class="dato-vacante"><strong>Empresa:</strong> El sitio 24</p>
+            <p class="dato-vacante"><strong>Sueldo:</strong> $8,000 / mes</p>
+            <p class="dato-vacante dato-ubicacion"><strong>Ubicación:</strong> Monterrey, Av. Paseo de los Leones, #701</p>
+            <p class="dato-vacante dato-contacto"><strong>Contacto:</strong> 8110101212</p>
+            <hr>
+            <p class="dato-vacante dato-horario"><strong>Horario:</strong> Lunes a viernes | 20:00 h - 6:00 h</p>
+            <p class="dato-vacante dato-modalidad"><strong>Modalidad:</strong> Presencial</p>
+            <p class="dato-vacante descripcion-vacante"><strong>Descripción:</strong> Buscamos a alguien disponible para ofrecer servicios nocturnos.</p>
+            <hr>
+            <div class="acciones-vacante">
+              <a class="boton-secundario" href="/vacante.html">Ver más</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta-vacante">
+          <h2>Guardia de seguridad</h2>
+          <div class="detalles-vacante">
+            <p class="dato-vacante"><strong>Empresa:</strong> Regio Guardias</p>
+            <p class="dato-vacante"><strong>Sueldo:</strong> $9,999 / mes</p>
+            <p class="dato-vacante dato-ubicacion"><strong>Ubicación:</strong> Monterrey, Av. 29 de febrero, #234</p>
+            <p class="dato-vacante dato-contacto"><strong>Contacto:</strong> 8110101011</p>
+            <hr>
+            <p class="dato-vacante dato-horario"><strong>Horario:</strong> Lunes a viernes | 8:00 h - 17:00 h</p>
+            <p class="dato-vacante dato-modalidad"><strong>Modalidad:</strong> Presencial</p>
+            <p class="dato-vacante descripcion-vacante"><strong>Descripción:</strong> Buscamos talento de personas comprometidas con el cuidado y resolución de problemas en agencia de guardias de seguridad y protección privada.</p>
+            <hr>
+            <div class="acciones-vacante">
+              <a class="boton-secundario" href="/vacante.html">Ver más</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta-vacante">
+          <h2>Cajero nocturno</h2>
+          <div class="detalles-vacante">
+            <p class="dato-vacante"><strong>Empresa:</strong> El sitio 24</p>
+            <p class="dato-vacante"><strong>Sueldo:</strong> $8,000 / mes</p>
+            <p class="dato-vacante dato-ubicacion"><strong>Ubicación:</strong> Monterrey, Av. Paseo de los Leones, #701</p>
+            <p class="dato-vacante dato-contacto"><strong>Contacto:</strong> 8110101212</p>
+            <hr>
+            <p class="dato-vacante dato-horario"><strong>Horario:</strong> Lunes a viernes | 20:00 h - 6:00 h</p>
+            <p class="dato-vacante dato-modalidad"><strong>Modalidad:</strong> Presencial</p>
+            <p class="dato-vacante descripcion-vacante"><strong>Descripción:</strong> Buscamos a alguien disponible para ofrecer servicios nocturnos.</p>
+            <hr>
+            <div class="acciones-vacante">
+              <a class="boton-secundario" href="/vacante.html">Ver más</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta-vacante">
+          <h2>Guardia de seguridad</h2>
+          <div class="detalles-vacante">
+            <p class="dato-vacante"><strong>Empresa:</strong> Regio Guardias</p>
+            <p class="dato-vacante"><strong>Sueldo:</strong> $9,999 / mes</p>
+            <p class="dato-vacante dato-ubicacion"><strong>Ubicación:</strong> Monterrey, Av. 29 de febrero, #234</p>
+            <p class="dato-vacante dato-contacto"><strong>Contacto:</strong> 8110101011</p>
+            <hr>
+            <p class="dato-vacante dato-horario"><strong>Horario:</strong> Lunes a viernes | 8:00 h - 17:00 h</p>
+            <p class="dato-vacante dato-modalidad"><strong>Modalidad:</strong> Presencial</p>
+            <p class="dato-vacante descripcion-vacante"><strong>Descripción:</strong> Buscamos talento de personas comprometidas con el cuidado y resolución de problemas en agencia de guardias de seguridad y protección privada.</p>
+            <hr>
+            <div class="acciones-vacante">
+              <a class="boton-secundario" href="/vacante.html">Ver más</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta-vacante">
+          <h2>Cajero nocturno</h2>
+          <div class="detalles-vacante">
+            <p class="dato-vacante"><strong>Empresa:</strong> El sitio 24</p>
+            <p class="dato-vacante"><strong>Sueldo:</strong> $8,000 / mes</p>
+            <p class="dato-vacante dato-ubicacion"><strong>Ubicación:</strong> Monterrey, Av. Paseo de los Leones, #701</p>
+            <p class="dato-vacante dato-contacto"><strong>Contacto:</strong> 8110101212</p>
+            <hr>
+            <p class="dato-vacante dato-horario"><strong>Horario:</strong> Lunes a viernes | 20:00 h - 6:00 h</p>
+            <p class="dato-vacante dato-modalidad"><strong>Modalidad:</strong> Presencial</p>
+            <p class="dato-vacante descripcion-vacante"><strong>Descripción:</strong> Buscamos a alguien disponible para ofrecer servicios nocturnos.</p>
+            <hr>
+            <div class="acciones-vacante">
+              <a class="boton-secundario" href="/vacante.html">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <p class="footer-marca">AMAC</p>
+      <hr class="footer-separador">
+
+      <nav class="footer-enlaces" aria-label="Enlaces del footer">
+        <div class="footer-enlaces-columna">
+          <a href="/index.html">Inicio</a>
+        </div>
+        <div class="footer-enlaces-columna">
+          <p>Contacto</p>
+          <p>Teléfono</p>
+          <p>Correo</p>
+        </div>
+      </nav>
+
+      <div class="footer-legal">
+        <span>© 2025 AMAC</span>
+        <p>Términos de servicio</p>
+        <p>Términos de privacidad</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
