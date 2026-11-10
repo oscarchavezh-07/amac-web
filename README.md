@@ -5,10 +5,11 @@ Proyecto web de AMAC (Asociación de Adultos Mayores A. C.) para consultar vacan
 ## Integrantes y actividades
 
 | Integrante | Actividades asignadas |
-| Oscar Chavez Hernandez| Manejo general, layout, componentes, variables y estilos base. Páginas de empresa, vacantes, mis solicitudes, detalle de vacante y login. |
-| Marco Monsivais Macias| Registro de empresa, registro de usuario, solicitudes recibidas, Quiénes somos y sección de puntos extras. |
+| --- | --- |
+| Oscar Chavez Hernandez | Manejo general, layout, componentes, variables y estilos base. Páginas de empresa, vacantes, mis solicitudes, detalle de vacante y login. Manejo y administración general del repositorio |
+| Marco Monsivais Macias | Propuesta de Registro de empresa, registro de usuario, solicitudes recibidas, Quiénes somos e intento sección de puntos extras. |
 | Mariana Gomez del Angel | Gestión general de los archivos de entrega y Git, además de este README.md. |
-| Javier WOng Mora | No se especificaron actividades|
+| Javier Wong Mora | No se especificaron actividades |
 
 ## Paleta de colores
 
@@ -78,3 +79,12 @@ Se evaluó `index.html` con Lighthouse desde Microsoft Edge, usando un servidor 
 
 <img width="1365" height="717" alt="lighthouse-accessibility" src="https://github.com/user-attachments/assets/2fc6ca50-504a-4037-899d-1c77d31de28d" />
 
+
+
+
+
+
+
+
+
+°^°
