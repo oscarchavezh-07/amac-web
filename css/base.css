@@ -143,3 +143,41 @@ h2 {
   padding: 1rem 0.625rem;
   background: var(--fondo, #f5f7fa);
 }
+
+/* Mis solicitudes */
+
+.pagina-solicitudes {
+  background: var(--fondo);
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.solicitudes-contenedor {
+  width: 100%;
+  max-width: 76.25rem;
+  margin-inline: auto;
+  padding: 1.25rem;
+}
+
+.solicitud-empresa {
+  color: var(--texto);
+  font-family: var(--etiqueta-font-family);
+  font-size: var(--etiqueta-font-size);
+  font-weight: var(--etiqueta-font-weight);
+}
+
+/* Vacantes empresa */
+
+.panel-vacantes-empresa {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.625rem;
+  background: var(--fondo, #f5f7fa);
+}
+
+.vacantes-contenedor {
+  width: 100%;
+  max-width: 76.25rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
