@@ -1,3 +1,4 @@
+/* variable.css*/
 :root {
   /* colores */
   --texto: #1a1a1a;
@@ -14,27 +15,28 @@
   --pantone2: #fddaad;
 
   /* fonts */
-  --titulo-font-family: Baskervville-SemiBold, sans-serif;
+  /* v2 */
+  --titulo-font-family: "Baskervville", serif;
   --titulo-font-size: 2.25rem;
   --titulo-line-height: normal;
   --titulo-font-weight: 600;
   --titulo-font-style: normal;
-  --subtitulo-font-family: Baskervville-Bold, sans-serif;
+  --subtitulo-font-family: "Baskervville", serif;
   --subtitulo-font-size: 1.5rem;
   --subtitulo-line-height: normal;
   --subtitulo-font-weight: 700;
   --subtitulo-font-style: normal;
-  --etiqueta-font-family: WorkSans-Bold, sans-serif;
+  --etiqueta-font-family: "Work Sans", sans-serif;
   --etiqueta-font-size: 1.125rem;
   --etiqueta-line-height: normal;
   --etiqueta-font-weight: 700;
   --etiqueta-font-style: normal;
-  --cuerpo-font-family: WorkSans-Regular, sans-serif;
+  --cuerpo-font-family: "Work Sans", sans-serif;
   --cuerpo-font-size: 1.125rem;
   --cuerpo-line-height: 150%;
   --cuerpo-font-weight: 400;
   --cuerpo-font-style: normal;
-  --boton-font-family: WorkSans-Medium, sans-serif;
+  --boton-font-family: "Work Sans", sans-serif;
   --boton-font-size: 1.25rem;
   --boton-line-height: normal;
   --boton-font-weight: 500;
