@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacantes disponibles | AMAC</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body class="pagina-vacantes">
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="barra-superior">
+      <a href="/index.html">
+        <img class="logo" src="/img/logo-header0.png" alt="AMAC">
+      </a>
+
+      <div class="acciones-header">
+        <a class="enlace-ayuda" href="#">
+          <img class="icono-ayuda" src="/img/icono-tel-fono0.svg" alt="Icono de telefono">
+          <span>Ayuda</span>
+        </a>
+        <button class="boton-menu" type="button">
+          <img class="icono-menu" src="/img/menu0.png" alt="Icono de menu">
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="/index.html">Vacantes</a>
+      <a href="/mis-solicitudes.html">Solicitudes</a>
+      <a href="/mi-perfil.html" class="current-page"> <!--Cuando exista, verdad-->Perfil</a>
+    </nav>
+  </header>
+
+  
+  <main class="pagina-registro">
+    <div class="login-contenedor">
+
+        <header class="registro-encabezado">
+        <h1 class="registro-titulo">Registrarse como Candidato</h1>
+        <hr class="login-separador">
+        </header>
+
+        <form class="registro-formulario" action="/index.html" method="post"
+            enctype="multipart/form-data">
+
+            <fieldset class="registro-seccion registro-personales">
+                <legend class="registro-legend">Datos personales</legend>
+                <hr class="login-separador-discontinuo">
+                <div class="registro-campos-personales">
+                    <div class="registro-campo">
+                        <label for="nombre" class="login-etiqueta"> Nombre(s)*</label>
+                        <input type="text" id="nombre" name="nombre" class="input" placeholder="Escribe una respuesta" required>
+                    </div>
+                    <div class="registro-campo">
+                        <label for="apellido-paterno" class="login-etiqueta"> Apellido Paterno* </label>
+                        <input type="text" id="apellido-paterno" name="apellido-paterno" class="input" placeholder="Escribe una respuesta" required>
+                    </div>
+                    <div class="registro-campo">
+                        <label for="apellido-materno" class="login-etiqueta"> Apellido Materno* </label>
+                        <input type="text" id="apellido-materno" name="apellido-materno" class="input" placeholder="Escribe una respuesta" required>
+                    </div>
+                    <div class="registro-campo">
+                        <label for="fecha-nacimiento" class="login-etiqueta"> Fecha de Nacimiento* </label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" class="input" required>
+                    </div>
+                    <div class="registro-campo">
+                        <label for="sexo" class="login-etiqueta">Sexo*</label>
+                        <select id="sexo" name="sexo" class="input" required>
+                            <option value="" selected disabled> Elige una respuesta </option>
+                            <option value="femenino">Femenino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="otro">Otro</option>
+                            <option value="no-especificar">Prefiero no especificar</option>
+                        </select>
+                    </div>
+                    <div class="registro-campo">
+                        <label for="nivel-estudios" class="login-etiqueta"> Nivel de Estudios* </label>
+                        <select id="nivel-estudios" name="nivel-estudios" class="input" required>
+                        <option value="" selected disabled>
+                            Elige una respuesta
+                        </option>
+                            <option value="primaria">Primaria</option>
+                            <option value="secundaria">Secundaria</option>
+                            <option value="preparatoria">Preparatoria</option>
+                            <option value="tecnico">Técnico</option>
+                            <option value="licenciatura">Licenciatura</option>
+                            <option value="posgrado">Posgrado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <fieldset class="registro-subseccion">
+                <legend class="registro-legend">Dirección</legend>
+
+                <div class="registro-campos-direccion">
+                    <hr class="login-separador-discontinuo">
+                    <div class="registro-campo">
+                        <label for="calle" class="login-etiqueta"> Calle y número* </label>
+                        <input type="text" id="calle" name="calle" class="input" placeholder="Escribe una respuesta" required>
+                    </div>
+                    <div class="registro-campo">
+                        <label for="colonia" class="login-etiqueta"> Colonia* </label>
+                        <input type="text" id="colonia" name="colonia" class="input" placeholder="Escribe una respuesta" required>
+                    </div>
+                </div>
+                </fieldset>
+            </fieldset>
+
+            <fieldset class="registro-seccion registro-contacto">
+                <legend class="registro-legend">Contacto</legend>
+                <hr class="login-separador-discontinuo">
+                <div class="registro-campos-contacto">
+                    <div class="registro-campo">
+                        <label for="correo-registro" class="login-etiqueta"> Correo* </label>
+                        <input type="email" id="correo-registro" name="correo" class="input" placeholder="Escribe una respuesta" required>
+                    </div>
+                    <div class="registro-campo">
+                        <label for="telefono" class="login-etiqueta"> Teléfono* </label>
+                        <input type="tel" id="telefono" name="telefono" class="input" placeholder="Escribe una respuesta" required>
+                    </div>
+                    <div class="registro-campo">
+                        <label for="medio-contacto" class="login-etiqueta"> Medio de contacto preferido </label>
+                        <select id="medio-contacto" name="medio-contacto" class="input">
+                            <option value="" selected disabled> Elige una respuesta </option>
+                            <option value="correo">Correo electrónico</option>
+                            <option value="telefono">Teléfono</option>
+                        </select>
+                    </div>
+                    <div class="registro-campo registro-file">
+                        <label for="cv" class="login-etiqueta"> Adjuntar CV </label>
+                        <input type="file" id="cv" name="cv" class="input">
+                        <small class="registro-ayuda"> Formatos permitidos: PDF, DOC o DOCX. </small>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="registro-terminos">
+                <label class="registro-checkbox">
+                    <input type="checkbox" name="aceptar-servicio" required> <span> Aceptar <a href="#">Términos de Servicio</a>* </span>
+                </label>
+                <label class="registro-checkbox">
+                    <input type="checkbox" name="aceptar-privacidad" required> <span> Aceptar <a href="#">Términos  Privacidad</a>* </span>
+                </label>
+            </div>
+                <button type="submit" class="boton boton-principal registro-submit">Registrarse</button>
+        </form>
+    </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <p class="footer-marca">AMAC</p>
+      <hr class="footer-separador">
+
+      <nav class="footer-enlaces" aria-label="Enlaces del footer">
+          <div class="footer-enlaces-columna">
+          <a href="/index.html">Inicio</a>
+          </div>
+          <div class="footer-enlaces-columna">
+          <p>Contacto</p>
+          <p>Teléfono</p>
+          <p>Correo</p>
+          </div>
+      </nav>
+
+      <div class="footer-legal">
+          <span>© 2025 AMAC</span>
+          <p>Términos de servicio</p>
+          <p>Términos de privacidad</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
