@@ -443,3 +443,27 @@
   outline: 2px solid var(--header-y-botones-principales);
   outline-offset: 2px;
 }
+
+/* vacantes empresa */
+
+.vacante-empresa {
+  background: var(--tarjetas, #fff);
+  border: 2px solid var(--contorno, #a8a8a8);
+  border-radius: 0.375rem;
+  box-shadow: var(--sombra-basica-box-shadow, 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+}
+
+.vacante-empresa-dato dt {
+  color: #000;
+  font-family: var(--etiqueta-font-family, "WorkSans-Bold", sans-serif);
+  font-size: var(--etiqueta-font-size, 1.125rem);
+  font-weight: var(--etiqueta-font-weight, 700);
+}
+
+.vacante-empresa-dato dd {
+  margin: 0;
+  color: var(--texto, #1a1a1a);
+  font-family: var(--cuerpo-font-family, "WorkSans-Regular", sans-serif);
+  font-size: var(--cuerpo-font-size, 1.125rem);
+  line-height: var(--cuerpo-line-height, 150%);
+}
