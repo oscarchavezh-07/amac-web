@@ -1,0 +1,185 @@
+/* base.css */
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo, #f5f7fa);
+  color: var(--texto, #1a1a1a);
+  font-family: var(--cuerpo-font-family, "WorkSans-Regular", sans-serif);
+  font-size: var(--cuerpo-font-size, 1.125rem);
+  line-height: var(--cuerpo-line-height, 150%);
+  font-weight: var(--cuerpo-font-weight, 400);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+img {
+  border-radius: 0.5rem;
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--ayuda, #fddaad);
+  outline-offset: 3px;
+}
+
+.saltar-contenido {
+  position: absolute;
+  z-index: 100;
+  top: -10rem;
+  left: -10rem;
+  padding: 0.75rem 1rem;
+  color: var(--texto, #1a1a1a);
+  background: var(--tarjetas, #fff);
+  border: 1px solid var(--contorno, #a8a8a8);
+  border-radius: 0.375rem;
+}
+
+.saltar-contenido:focus {
+  top: 1rem;
+  left: 1rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--subtitulo-font-family, "Baskervville-Bold", sans-serif);
+  font-weight: var(--subtitulo-font-weight, 700);
+}
+
+h1,
+h2 {
+  font-size: var(--subtitulo-font-size, 1.5rem);
+}
+
+/* Especificos detalle vacante */
+
+.pagina-detalle-vacante,
+.pagina-detalle-vacante * {
+  box-sizing: border-box;
+}
+
+.pagina-detalle-vacante {
+  color: var(--texto, #1a1a1a);
+  background: var(--fondo, #ffffff);
+  font-family: var(--cuerpo-font-family, "WorkSans-Regular", sans-serif);
+  font-size: var(--cuerpo-font-size, 1.125rem);
+  line-height: var(--cuerpo-line-height, 150%);
+}
+
+.pagina-detalle-vacante h1,
+.pagina-detalle-vacante h2,
+.pagina-detalle-vacante p {
+  margin: 0;
+}
+
+.pagina-detalle-vacante button,
+.pagina-detalle-vacante a {
+  font: inherit;
+}
+
+/* login */
+.pagina-login {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem 0.625rem;
+  background: var(--fondo, #f5f7fa);
+}
+
+.pagina-login *,
+.pagina-login *::before,
+.pagina-login *::after {
+  box-sizing: border-box;
+}
+
+.login-contenedor {
+  width: 100%;
+  max-width: 76.25rem;
+  margin: 0 auto;
+}
+
+.login-separador {
+  border: 0;
+  border-top: 1px solid var(--contorno, #a8a8a8);
+  margin: 0.75rem 0;
+}
+
+.login-separador-discontinuo {
+  width: 100%;
+  border: 0;
+  border-top: 2px dashed var(--contorno, #a8a8a8);
+  margin: 0.5rem 0;
+}
+
+/* Registro candidato*/
+
+.pagina-registro {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem 0.625rem;
+  background: var(--fondo, #f5f7fa);
+}
+
+/* Mis solicitudes */
+
+.pagina-solicitudes {
+  background: var(--fondo);
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.solicitudes-contenedor {
+  width: 100%;
+  max-width: 76.25rem;
+  margin-inline: auto;
+  padding: 1.25rem;
+}
+
+.solicitud-empresa {
+  color: var(--texto);
+  font-family: var(--etiqueta-font-family);
+  font-size: var(--etiqueta-font-size);
+  font-weight: var(--etiqueta-font-weight);
+}
+
+/* v2 */
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
