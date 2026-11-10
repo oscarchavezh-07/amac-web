@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacantes disponibles | AMAC</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body class="pagina-vacantes">
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="barra-superior">
+      <a href="/empresa-vacantes.html">
+        <img class="logo" src="/img/logo-header0.png" alt="AMAC">
+      </a>
+
+      <div class="acciones-header">
+        <a class="enlace-ayuda" href="#">
+          <img class="icono-ayuda" src="img/icono-tel-fono0.svg" alt="Icono de telefono">
+          <span>Ayuda</span>
+        </a>
+        <button class="boton-menu" type="button">
+          <img class="icono-menu" src="img/menu0.png" alt="Icono de menu">
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="/vacante.html" class="current-page">Vacantes</a>
+      <a href="/mis-solicitudes.html">Solicitudes</a>
+      <a href="/mi-perfil.html"> <!--Cuando exista, verdad-->Perfil</a>
+    </nav>
+  </header>
+
+  <main class="panel-vacantes-empresa">
+  <div class="vacantes-contenedor">
+    <div class="vacantes-encabezado">
+      <h1 class="vacantes-titulo">Panel de Vacantes</h1>
+      <p class="vacantes-descripcion"> Revisa las vacantes que has publicado. </p>
+    </div>
+
+    <form class="buscador" action="/vacante.html" method="get">
+        <div class="campo-busqueda">
+            <input type="search" placeholder="Buscar vacante" id="busca">
+            <button class="boton-buscar" type="submit">
+                <img src="img/search-icon.png" alt="Icono de busqueda">
+            </button>
+        </div>
+    </form>
+
+    <hr class="separador">
+
+    <a href="/crea-vacante.html" class="boton boton-principal">
+      <span>
+        Publicar Vacante
+      </span>
+    </a>
+
+    <hr class="separador">
+
+    <div class="vacantes-listado">
+
+      <article class="vacante-empresa">
+        <header class="vacante-empresa-encabezado">
+          <h2 class="vacante-empresa-titulo">
+            Guardia de Seguridad
+          </h2>
+          <div class="vacante-empresa-acciones-principales">
+            <a href="/edita-vacante.html" class="boton boton-principal">
+              <span>
+                Editar Vacante
+              </span>
+            </a>
+            <a href="/detalle-vacante.html" class="boton boton-secundario">
+              <span class="side-button-content">
+                Ver detalles
+              </span>
+            </a>
+          </div>
+        </header>
+
+        <hr class="separador">
+
+        <dl class="vacante-empresa-informacion">
+          <div class="vacante-empresa-dato">
+            <dt>Sueldo</dt>
+            <dd>$9,999 / mes</dd>
+          </div>
+          <div class="vacante-empresa-dato">
+            <dt>Horario</dt>
+            <dd>Lunes a Viernes | 8:00h - 17:00h</dd>
+          </div>
+          <div class="vacante-empresa-dato">
+            <dt>Categoría</dt>
+            <dd>Seguridad</dd>
+          </div>
+        </dl>
+        <hr class="login-separador-discontinuo">
+        <div class="vacante-empresa-acciones">
+          <button type="button" class="boton boton-secundario">
+            <span>Pausar</span>
+          </button>
+          <button type="button" class="boton boton-secundario">
+            <span>
+                Reactivar
+            </span>
+          </button>
+          <button type="button" class="boton boton-cancelar">
+            Cerrar Vacante
+          </button>
+        </div>
+      </article>
+
+      <article class="vacante-empresa">
+        <header class="vacante-empresa-encabezado">
+          <h2 class="vacante-empresa-titulo">
+            Cajero Nocturno
+          </h2>
+
+          <div class="vacante-empresa-acciones-principales">
+            <a href="/edita-vacante.html" class="boton boton-principal">
+              <span>
+                Editar Vacante
+              </span>
+            </a>
+            <a href="/detalle-vacante.html" class="boton boton-secundario">
+              <span>
+                Ver detalles
+              </span>
+            </a>
+          </div>
+        </header>
+        <hr class="separador">
+
+        <dl class="vacante-empresa-informacion">
+          <div class="vacante-empresa-dato">
+            <dt>Sueldo</dt>
+            <dd>$8,000 / mes</dd>
+          </div>
+          <div class="vacante-empresa-dato">
+            <dt>Horario</dt>
+            <dd>Lunes a Viernes | 20:00h - 6:00h</dd>
+          </div>
+          <div class="vacante-empresa-dato">
+            <dt>Categoría</dt>
+            <dd>Ventas</dd>
+          </div>
+        </dl>
+
+        <hr class="login-separador-discontinuo">
+        <div class="vacante-empresa-acciones">
+          <button type="button" class="boton boton-secundario">
+            <span>Pausar</span>
+          </button>
+          <button type="button" class="boton boton-secundario">
+            <span>Reactivar</span>
+          </button>
+          <button type="button" class="boton boton-cancelar">
+            Cerrar Vacante
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <p class="footer-marca">AMAC</p>
+      <hr class="footer-separador">
+
+      <nav class="footer-enlaces" aria-label="Enlaces del footer">
+          <div class="footer-enlaces-columna">
+          <a href="/empresa-vacantes.html">Inicio</a>
+          </div>
+          <div class="footer-enlaces-columna">
+          <p>Contacto</p>
+          <p>Teléfono</p>
+          <p>Correo</p>
+          </div>
+      </nav>
+
+      <div class="footer-legal">
+          <span>© 2025 AMAC</span>
+          <p>Términos de servicio</p>
+          <p>Términos de privacidad</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
