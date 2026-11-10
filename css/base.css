@@ -165,3 +165,19 @@ h2 {
   font-size: var(--etiqueta-font-size);
   font-weight: var(--etiqueta-font-weight);
 }
+
+/* Vacantes empresa */
+
+.panel-vacantes-empresa {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.625rem;
+  background: var(--fondo, #f5f7fa);
+}
+
+.vacantes-contenedor {
+  width: 100%;
+  max-width: 76.25rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
